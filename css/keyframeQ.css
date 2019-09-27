@@ -1,0 +1,42 @@
+
+
+/***************************Animaciones*****************************/
+
+@keyframes rotateimg2 {
+    0% {
+  	transform:rotate(0deg)
+  	}
+  	50% {
+  	transform:rotate(10deg)
+  	}
+  	100% {
+  	transform:rotate(0deg)
+  	}
+}
+@keyframes animacionimg3 {
+	0% {
+		position: relative;
+		left: 0px
+	}
+	50% {
+		position: relative;
+		left: 20px;
+    bottom:5px;
+	}
+	100% {
+		position: relative;
+		left: 0px;
+	}
+}
+@keyframes slideinP {
+  0% {
+    margin-top:150%;
+  }
+
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-bottom: -0%;
+  }
+}

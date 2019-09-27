@@ -1,0 +1,43 @@
+:root{
+  --bg-color:#02010a;
+  --header-bg-color: #5b7989;
+  --imgsec-bg-color:#d5c75f;
+  --imagencen-bg-color: #82c3a6;
+  --imgsecizq-bg-color:#82c3a6;
+  --imgsecder-sombra-c: #82c3a6;
+  --footer-bg-color:#C6d5c5;
+  --font-color-white:#fff;
+  --header-bg-active:hsl(203, 7%, 66%);
+}
+/**********contenedor de imagenes retratos y paisajes*************/
+.contenedorimg{background-color:var(--imgsec-bg-color);}
+.contenedorimg{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto auto auto;
+  width: 80%
+}
+.contenedorimg img{
+  margin: 2vh 1vw 2vh 1vw;
+  width: 90%;
+  height: 90%;
+  align-items: center;
+  padding: 1vh 0 1vh 0;
+}
+.contenedorimg [class*="item"]{
+  width: 33%;
+  text-align: center;
+}
+.contenedorimg [class*="item"]:nth-child(even){
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+.contenedorimg .item1{
+  -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+  filter: blur(10px);
+}
+.contenedorimg .item3{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+/******************************animacion*************************/

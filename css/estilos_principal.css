@@ -1,0 +1,149 @@
+:root{
+  --bg-color:#02010a;
+  --header-bg-color: #5b7989;
+  --imgsec-bg-color:#d5c75f;
+  --imagencen-bg-color: #82c3a6;
+  --imgsecizq-bg-color:#82c3a6;
+  --imgsecder-sombra-c: #82c3a6;
+  --footer-bg-color:#C6d5c5;
+  --font-color-white:#fff;
+  --header-bg-active:hsl(203, 7%, 66%);
+}
+body{background-color: var(--bg-color);}
+body{
+  animation-duration: 1s;
+  animation-name: slideinP;
+}
+/*****************************Barra de navegacion***********************************/
+.header {
+  background-color:var(--header-bg-color);
+  color: var(--font-color-white);
+  font-size: 1.9em;
+ }
+.header {
+  display: flex;
+	flex-flow: row wrap;
+	width: 80%;
+	border-radius: 10px 10px 0 0;
+	padding: 2vh 0 2vh 0;
+	margin: 0 auto auto auto;
+  align-items: center;
+  justify-content: left;
+ }
+.item{
+	width: 5vw;
+  height: auto;
+  margin-left:2vw;
+ }
+.header span:first-child {
+  /*margin-left:5%;*/
+  width: 50vw;
+  text-shadow: 0 0 2px var(--bg-color);
+ }
+ .header span:first-child:hover {color: var(--bg-color);}
+ .header span a:link, .header span a:visited {
+	padding: 1.5vh 1.5vh;
+	text-decoration: none;
+	color: var(--font-color-white);
+	}
+  .header span a:hover{
+	background: var(--header-bg-active) !important;
+	}
+
+/********************************Imagen principal*************************************/
+.contenedor1 {
+	margin: 0 auto 0 auto;
+  width: 80%;
+	display: flex;
+	flex-flow: column wrap;
+}
+.contenedor1 {background-color: var(--footer-bg-color)}
+ #bloque1 {
+  color: var(--font-color-white);
+  font-size: 1.1em;
+  width: 100%;
+}
+.contenedor1 #bloque1 img {
+  width: 90%;
+  height: 70vh;
+  border: 2px solid black;
+  margin: 2vh 4vw 2vh 4vw;
+  box-shadow: 5px 5px 5px 0px  var(--bg-color);
+
+}
+/********************************Imagenes Secundarias*********************************/
+.contenedor2 {
+	margin: 0 auto auto auto;
+  width: 80%;
+  height: auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+.contenedor2 {background-color: var(--imgsec-bg-color)}
+.contenedor2 {
+  color: var(--font-color-white);
+  font-size: 1.5vw;
+}
+.contenedor2 [class*="bloque"]{
+  width: 50%;
+  text-align: center;
+  color: var(--bg-color);
+}
+.contenedor2 img {
+ width: 90%;
+ height: 85%;
+ margin: 2vh 2vw 0 2vw;
+ border: 2px solid black;
+ box-shadow: 5px 5px 5px 0px  var(--bg-color);
+}
+.bloque2:hover{
+    animation-name: rotateimg2;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+}
+.bloque3:hover {
+	animation-name: animacionimg3;
+	animation-duration: 1s;
+	-webkit-animation-delay: 0.2s;
+	-moz-animation-delay: 0.2s;
+	-o-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+/******************************pie de pagina****************************************/
+.footer {background-color: var(--footer-bg-color)}
+.footer {
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto 2vh auto;
+  text-align: center;
+  font-size:1.3vw;
+}
+.footer [class*="fbloque"]{
+  width: 25%;;
+  text-align: center;
+  color: var(--bg-color);
+  display: inline-block;
+  padding: 2vh 0 2vh 0;
+  margin-bottom: 2vh;
+}
+.footer div span:first-child {
+  text-transform:uppercase;
+  font-weight: bold;
+}
+.fbloque3 img {
+  width: 20px;
+  height: 20px;
+}
+.Table{
+  margin: 1vh 2vw 1vh 2vw;
+  text-align: left !important;
+}
+#item1, #item2,#item3 {
+  width: 100%;
+}
+
+@media all and (max-width: 700px) and (min-width:480px) {
+
+
+}
