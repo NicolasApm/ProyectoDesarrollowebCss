@@ -23,6 +23,7 @@
   height: 85%;
   align-items: center;
   padding: 1vh 0 1vh 0;
+  border-radius: 20px;
 }
 .contenedorimg [class*="item"]{
   width: 33%;
@@ -40,14 +41,14 @@
 	filter: sepia(90%);
 }
 /******************************animacion*************************/
-@media all and (max-width: 700px) and (min-width:480px) {
+@media all and (max-width: 700px) and (min-width:400px) {
 
   .contenedorimg [class*="item"]{
     width: 100%;
     text-align: center;
   }
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 400px) and (min-width: 200px) {
   .contenedorimg [class*="item"]{
     width: 100%;
     text-align: center;
