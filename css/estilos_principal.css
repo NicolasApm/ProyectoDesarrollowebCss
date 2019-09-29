@@ -16,14 +16,13 @@ body{
   animation-duration: 1s;
   animation-name: slideinP;
   font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
 }
 /*****************************Barra de navegacion***********************************/
 
  .header {
   background-color:var(--header-bg-color);
   color: var(--font-color-white);
-  font-size: 1.5vw;
-
  }
  .header {
   display: flex;
@@ -123,7 +122,7 @@ body{
   flex-flow: row wrap;
   margin: 0 auto 2vh auto;
   text-align: center;
-  font-size:1.3vw;
+  font-size:0.7em;
 }
  .footer [class*="fbloque"]{
   width: 25%;;
@@ -136,7 +135,6 @@ body{
  .footer div span:first-child {
   text-transform:uppercase;
   font-weight: bold;
-
 }
  .fbloque3 img {
   width: 20px;
@@ -145,8 +143,7 @@ body{
 }
  td:nth-child(even){width: 100%;}
  td:nth-child(odd){width: 5%;}
- .Table{
-}
+
  #item1, #item2,#item3 {
   width: 100%;
  }
@@ -172,16 +169,16 @@ body{
   }
   /**********pie pagina**********/
   .footer{
-   font-size: 1.4em;
+   font-size: 5vw;
   }
   .footer [class*="fbloque"]{
     width: 100%;
   }
   .Table{
     margin: 1vh 15vw 1vh 15vw;
-   /*text-align: left !important;*/
   }
- /*************************Resolucion SmarthPhone*******************************/
+}
+   /*************************Resolucion SmarthPhone*******************************/
 }
 @media all and (max-width: 480px) {
   .header span:first-child {width: 100%;}
@@ -197,7 +194,7 @@ body{
      margin-right: 3vw !important;
      padding: 0 2vw 0 2vw;
    }
-   .contenedor2{font-size: 1.2em;}
+   .contenedor2{font-size: 1em;}
    .contenedor2 [class*="bloque"]{
     width: 100%;
    }

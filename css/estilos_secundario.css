@@ -30,7 +30,6 @@
 .contenedorimg [class*="item"]:nth-child(even){
   -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
   filter: grayscale(100%);
-  background-color: blue;
 }
 .contenedorimg .item1{
   -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
