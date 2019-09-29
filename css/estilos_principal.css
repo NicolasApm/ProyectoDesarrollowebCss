@@ -9,18 +9,23 @@
   --font-color-white:#fff;
   --header-bg-active:hsl(203, 7%, 66%);
 }
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
 body{background-color: var(--bg-color);}
 body{
   animation-duration: 1s;
   animation-name: slideinP;
+  font-family: 'Dancing Script', cursive;
 }
 /*****************************Barra de navegacion***********************************/
-.header {
+
+ .header {
   background-color:var(--header-bg-color);
   color: var(--font-color-white);
-  font-size: 1.9em;
+  font-size: 1.5vw;
+
  }
-.header {
+ .header {
   display: flex;
 	flex-flow: row wrap;
 	width: 80%;
@@ -30,15 +35,17 @@ body{
   align-items: center;
   justify-content: left;
  }
-.item{
-	width: 5vw;
+ .item{
+	width: 15%;
   height: auto;
-  margin-left:2vw;
  }
-.header span:first-child {
-  /*margin-left:5%;*/
-  width: 50vw;
-  text-shadow: 0 0 2px var(--bg-color);
+ .item:nth-child(2), .item:nth-child(3), .item:nth-child(4){
+   text-align: center !important;
+ }
+ .item:first-child{
+   text-align: center;
+   width: 50%;
+   text-shadow: 0 0 2px var(--bg-color);
  }
  .header span:first-child:hover {color: var(--bg-color);}
  .header span a:link, .header span a:visited {
@@ -49,7 +56,6 @@ body{
   .header span a:hover{
 	background: var(--header-bg-active) !important;
 	}
-
 /********************************Imagen principal*************************************/
 .contenedor1 {
 	margin: 0 auto 0 auto;
@@ -65,11 +71,10 @@ body{
 }
 .contenedor1 #bloque1 img {
   width: 90%;
-  height: 70vh;
+  height: 30vw;
   border: 2px solid black;
   margin: 2vh 4vw 2vh 4vw;
   box-shadow: 5px 5px 5px 0px  var(--bg-color);
-
 }
 /********************************Imagenes Secundarias*********************************/
 .contenedor2 {
@@ -79,8 +84,8 @@ body{
 	display: flex;
 	flex-flow: row wrap;
 }
-.contenedor2 {background-color: var(--imgsec-bg-color)}
-.contenedor2 {
+  .contenedor2 {background-color: var(--imgsec-bg-color)}
+ .contenedor2 {
   color: var(--font-color-white);
   font-size: 1.5vw;
 }
@@ -88,20 +93,21 @@ body{
   width: 50%;
   text-align: center;
   color: var(--bg-color);
+  padding: 2vh 0 2vh 0;
 }
-.contenedor2 img {
- width: 90%;
- height: 85%;
- margin: 2vh 2vw 0 2vw;
- border: 2px solid black;
- box-shadow: 5px 5px 5px 0px  var(--bg-color);
+ .contenedor2 img {
+  width: 90%;
+  height: 85%;
+  margin: 2vh 2vw 0 2vw;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px 0px  var(--bg-color);
 }
-.bloque2:hover{
-    animation-name: rotateimg2;
-    animation-duration: 1000ms;
-    animation-timing-function: linear;
+ .bloque2:hover{
+  animation-name: rotateimg2;
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
 }
-.bloque3:hover {
+ .bloque3:hover {
 	animation-name: animacionimg3;
 	animation-duration: 1s;
 	-webkit-animation-delay: 0.2s;
@@ -110,8 +116,8 @@ body{
 	animation-delay: 0.2s;
 }
 /******************************pie de pagina****************************************/
-.footer {background-color: var(--footer-bg-color)}
-.footer {
+ .footer {background-color: var(--footer-bg-color)}
+ .footer {
   width: 80%;
   display: flex;
   flex-flow: row wrap;
@@ -119,7 +125,7 @@ body{
   text-align: center;
   font-size:1.3vw;
 }
-.footer [class*="fbloque"]{
+ .footer [class*="fbloque"]{
   width: 25%;;
   text-align: center;
   color: var(--bg-color);
@@ -127,23 +133,85 @@ body{
   padding: 2vh 0 2vh 0;
   margin-bottom: 2vh;
 }
-.footer div span:first-child {
+ .footer div span:first-child {
   text-transform:uppercase;
   font-weight: bold;
+
 }
-.fbloque3 img {
+ .fbloque3 img {
   width: 20px;
   height: 20px;
+  float: right;
 }
-.Table{
-  margin: 1vh 2vw 1vh 2vw;
-  text-align: left !important;
+ td:nth-child(even){width: 100%;}
+ td:nth-child(odd){width: 5%;}
+ .Table{
 }
-#item1, #item2,#item3 {
+ #item1, #item2,#item3 {
   width: 100%;
-}
-
+ }
+/*********************Resolucon de tablet**********************************/
 @media all and (max-width: 700px) and (min-width:480px) {
 
-
+ .header span:first-child {width: 100%;}
+ .header{
+  font-size: 1em;
+  text-align: center;
+  justify-content: center;
+  }
+ .item{
+  margin-top: 2vh;
+  }
+  .header span:nth-child(3),  .header span:nth-child(4){
+   margin-right: 3vw !important;
+   padding: 0 2vw 0 2vw;
+  }
+  .contenedor2{font-size: 1.2em;}
+  .contenedor2 [class*="bloque"]{
+  width: 100%;
+  }
+  /**********pie pagina**********/
+  .footer{
+   font-size: 1.4em;
+  }
+  .footer [class*="fbloque"]{
+    width: 100%;
+  }
+  .Table{
+    margin: 1vh 15vw 1vh 15vw;
+   /*text-align: left !important;*/
+  }
+ /*************************Resolucion SmarthPhone*******************************/
+}
+@media all and (max-width: 480px) {
+  .header span:first-child {width: 100%;}
+  .header{
+    font-size: 1em;
+    text-align: center;
+    justify-content: center;
+   }
+   .item{
+    margin-top: 2vh;
+   }
+   .header span:nth-child(3),  .header span:nth-child(4){
+     margin-right: 3vw !important;
+     padding: 0 2vw 0 2vw;
+   }
+   .contenedor2{font-size: 1.2em;}
+   .contenedor2 [class*="bloque"]{
+    width: 100%;
+   }
+   .footer{
+    font-size: 5vw;
+   }
+   .footer [class*="fbloque"]{
+    width: 100%;
+   }
+   .footer .Table{
+    text-align: left !important;
+   }
+   .Table{
+     margin: 1vh 10vw 1vh 10vw;
+     /*text-align: left !important;*/
+   }
 }
